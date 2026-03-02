@@ -3,37 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admissions Tracker · Settings</title>
+  <title>Student Portal · Settings</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body data-page="settings">
   <header class="top-nav" data-nav></header>
   <main class="container stack">
-    <section>
-      <h1>Settings</h1>
-      <p class="small">Configure GitHub repository integration and full JSON config.</p>
-    </section>
-
+    <section class="card"><h1>Settings</h1><p>Unsaved changes: <strong id="changeCount">0</strong></p></section>
     <section class="card stack">
-      <h2>GitHub Integration</h2>
-      <div class="row">
-        <div class="col-4"><label>Owner</label><input id="owner" /></div>
-        <div class="col-4"><label>Repo</label><input id="repo" /></div>
-        <div class="col-4"><label>Branch</label><input id="branch" /></div>
-        <div class="col-4"><label>Students Path</label><input id="pathStudents" /></div>
-        <div class="col-4"><label>Applications Path</label><input id="pathApplications" /></div>
-        <div class="col-4"><label>Documents Path</label><input id="pathDocuments" /></div>
-        <div class="col-12"><label>Personal Access Token</label><input id="token" type="password" /></div>
+      <h2>Repository + API mode</h2>
+      <div class="grid cols-3">
+        <input data-setting="owner" placeholder="Owner" />
+        <input data-setting="repo" placeholder="Repo" />
+        <input data-setting="branch" placeholder="Branch" />
+        <input data-setting="dataPath" placeholder="Data path" />
+        <input data-setting="docsPath" placeholder="Docs path" />
+        <input data-setting="token" placeholder="GitHub token" type="password" />
       </div>
-    </section>
-
-    <section class="card stack">
-      <h2>Config JSON</h2>
-      <textarea id="configJson"></textarea>
-      <div class="inline-actions">
+      <textarea id="configEditor"></textarea>
+      <div class="rowline">
         <button id="saveSettings">Save settings</button>
-        <button class="secondary" id="resetSettings">Reset defaults</button>
+        <button id="downloadBundle">Download Update Bundle</button>
+        <button id="commitGithub">Commit via GitHub API</button>
+        <button id="resetRepo" class="secondary">Reset to repo version</button>
       </div>
+    </section>
+    <section class="card">
+      <h3>Changed JSON files</h3>
+      <pre id="changedFiles"></pre>
     </section>
   </main>
   <script type="module" src="assets/app.js"></script>
