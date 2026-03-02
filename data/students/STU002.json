@@ -1,0 +1,76 @@
+{
+  "studentId": "STU002",
+  "createdAt": "2025-10-29T15:05:00Z",
+  "updatedAt": "2026-01-21T14:40:00Z",
+  "lastUpdated": "2026-01-21T14:40:00Z",
+  "profile": {
+    "firstName": "Noah",
+    "lastName": "Kim",
+    "email": "noah.kim@example.com",
+    "phone": "+1-206-555-0124",
+    "dateOfBirth": "2006-09-03",
+    "citizenship": "South Korea",
+    "address": {
+      "line1": "940 Pine St",
+      "city": "Seattle",
+      "state": "WA",
+      "postalCode": "98101",
+      "country": "USA"
+    },
+    "emergencyContact": {
+      "name": "Jisoo Kim",
+      "relationship": "Father",
+      "phone": "+1-206-555-0180",
+      "email": "jisoo.kim@example.com"
+    }
+  },
+  "documents": {
+    "transcript": {
+      "status": "received",
+      "fileName": "noah_transcript.pdf",
+      "uploadedAt": "2025-10-31T09:40:00Z"
+    },
+    "personalStatement": {
+      "status": "received",
+      "fileName": "noah_statement.pdf",
+      "uploadedAt": "2025-11-01T14:27:00Z"
+    },
+    "recommendationLetter": {
+      "status": "pending",
+      "fileName": null,
+      "uploadedAt": null
+    },
+    "testScores": {
+      "status": "received",
+      "fileName": "noah_sat_scores.pdf",
+      "uploadedAt": "2025-11-03T08:12:00Z"
+    },
+    "passportCopy": {
+      "status": "received",
+      "fileName": "noah_passport.pdf",
+      "uploadedAt": "2025-10-30T17:20:00Z"
+    }
+  },
+  "applications": [
+    {
+      "applicationId": "APP-002-A",
+      "portal": "admissions",
+      "program": "Mechanical Engineering BS",
+      "term": "Fall 2026",
+      "status": "additional_info_required",
+      "deadline": "2026-02-10",
+      "submittedAt": "2025-12-20T20:05:00Z",
+      "lastUpdated": "2026-01-21T14:40:00Z"
+    },
+    {
+      "applicationId": "APP-002-B",
+      "portal": "financialAid",
+      "program": "Merit Scholarship",
+      "term": "Fall 2026",
+      "status": "under_review",
+      "deadline": "2026-03-15",
+      "submittedAt": "2026-01-12T11:50:00Z",
+      "lastUpdated": "2026-01-19T17:30:00Z"
+    }
+  ]
+}

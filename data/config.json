@@ -1,0 +1,24 @@
+{
+  "requiredDocuments": [
+    "transcript",
+    "personalStatement",
+    "recommendationLetter",
+    "testScores",
+    "passportCopy"
+  ],
+  "applicationStatuses": [
+    "draft",
+    "submitted",
+    "under_review",
+    "additional_info_required",
+    "accepted",
+    "waitlisted",
+    "rejected"
+  ],
+  "deadlineWarningDays": 14,
+  "portals": {
+    "admissions": "https://admissions.example.edu",
+    "financialAid": "https://finaid.example.edu",
+    "housing": "https://housing.example.edu"
+  }
+}
