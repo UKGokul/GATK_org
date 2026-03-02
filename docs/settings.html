@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions Tracker · Settings</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="settings">
+  <header class="top-nav" data-nav></header>
+  <main class="container stack">
+    <section>
+      <h1>Settings</h1>
+      <p class="small">Configure GitHub repository integration and full JSON config.</p>
+    </section>
+
+    <section class="card stack">
+      <h2>GitHub Integration</h2>
+      <div class="row">
+        <div class="col-4"><label>Owner</label><input id="owner" /></div>
+        <div class="col-4"><label>Repo</label><input id="repo" /></div>
+        <div class="col-4"><label>Branch</label><input id="branch" /></div>
+        <div class="col-4"><label>Students Path</label><input id="pathStudents" /></div>
+        <div class="col-4"><label>Applications Path</label><input id="pathApplications" /></div>
+        <div class="col-4"><label>Documents Path</label><input id="pathDocuments" /></div>
+        <div class="col-12"><label>Personal Access Token</label><input id="token" type="password" /></div>
+      </div>
+    </section>
+
+    <section class="card stack">
+      <h2>Config JSON</h2>
+      <textarea id="configJson"></textarea>
+      <div class="inline-actions">
+        <button id="saveSettings">Save settings</button>
+        <button class="secondary" id="resetSettings">Reset defaults</button>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
