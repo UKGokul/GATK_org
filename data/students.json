@@ -1,0 +1,19 @@
+{
+  "students": [
+    {
+      "studentId": "STU001",
+      "fullName": "Ariana Patel",
+      "email": "ariana.patel@example.com",
+      "primaryStatus": "under_review",
+      "lastUpdated": "2026-01-20T09:15:00Z"
+    },
+    {
+      "studentId": "STU002",
+      "fullName": "Noah Kim",
+      "email": "noah.kim@example.com",
+      "primaryStatus": "additional_info_required",
+      "lastUpdated": "2026-01-21T14:40:00Z"
+    }
+  ],
+  "updatedAt": "2026-01-21T14:40:00Z"
+}
