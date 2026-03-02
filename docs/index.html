@@ -3,27 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admissions Tracker · Dashboard</title>
+  <title>Student Portal · Dashboard</title>
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body data-page="dashboard">
   <header class="top-nav" data-nav></header>
   <main class="container stack">
-    <section>
-      <h1>Dashboard</h1>
-      <p class="small">Quick overview of students and applications.</p>
-    </section>
-    <section id="kpis" class="grid kpis"></section>
+    <section class="card"><h1>Dashboard</h1><p>Unsaved changes: <strong id="changeCount">0</strong></p></section>
+    <section id="kpis" class="grid cols-4"></section>
     <section class="card stack">
-      <h2>Application Pipeline</h2>
-      <div class="table-wrap">
-        <table class="table">
-          <thead>
-            <tr><th>ID</th><th>Student</th><th>University</th><th>Program</th><th>Status</th><th>Deadline</th></tr>
-          </thead>
-          <tbody id="appRows"></tbody>
-        </table>
-      </div>
+      <h2>All Applications</h2>
+      <table class="table"><thead><tr><th>Student</th><th>University</th><th>Program</th><th>Status</th><th>Deadline</th></tr></thead><tbody id="appsBody"></tbody></table>
     </section>
   </main>
   <script type="module" src="assets/app.js"></script>
