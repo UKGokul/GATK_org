@@ -1,7 +1,0 @@
-{
-  "students": [
-    {"id":"STU001","name":"Aisha Rahman","email":"aisha.rahman@example.com"},
-    {"id":"STU002","name":"Luca Weber","email":"luca.weber@example.com"}
-  ],
-  "updatedAt":"2026-03-02T00:00:00Z"
-}
